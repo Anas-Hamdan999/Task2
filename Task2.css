@@ -1,0 +1,139 @@
+/* for the body */
+.bg_image { 
+   overflow:auto;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   max-width: 100%;
+   background-image:url(../images/last.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+/* for making the whole content in the center */ 
+.float_center { 
+    margin: 5% 20%;
+    border: 3px solid rgb(231, 120, 231);  
+}
+
+/* the border of the whole content */
+.border { 
+    border: 10px solid red;
+    border-top:0;
+}
+
+/* the upper part of the conent */ 
+.first_half { 
+   background-image:url(../images/last.jpg);
+   background-size: cover;
+}
+
+/* the content of the upper part of the whole conent*/
+.text_inside { 
+    color: lightgray;
+    margin-left: 10%;
+    max-width: 75%;
+}
+
+/* the lower part of the content */
+.second_half { 
+    color: rgb(209, 36, 209);
+    margin: 5% 25%;
+    max-block-size: 100%;
+}
+
+/* the input fields */
+.signin { 
+    position:absolute;
+    width:30%;
+    border: 1px solid grey;
+    background-color: rgb(231, 120, 231);
+    border-radius: 30px;
+    height: 6%;
+    text-align: center;
+}
+
+/* to make the hyperlink without effects*/
+.ref_effects { 
+    text-decoration: none;
+    color: rgb(209, 36, 209);
+}
+
+/* to make the content float right */
+.right { 
+    float:right;
+}
+
+/* for the buttons */
+.buttons { 
+    background-color: purple;
+    color:white;
+    margin: 5% 30%;
+}
+
+/* for the create account */
+.create { 
+    color:lightgray;
+    margin-left: 5%;
+}
+
+/* for the icons */
+.icons { 
+    position: absolute;
+    z-index: 2;
+    margin: .5% 0% 0% 1%;
+    width: 2%;
+    height: 4%;
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 900px) and (min-width: 768px) {
+    .bg_image {
+        background-image: none;
+    }
+   .float_center {
+        margin: 0; 
+    }
+    .signin {
+        width: 50%;
+    }
+    .images {
+        width: 4%;
+        height: 4%;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) and (min-width: 481px) {
+    .bg_image {
+        background-image: none;
+    }
+    .float_center {
+        margin: 0;
+    }
+    .signin {
+        width: 50%;
+    }
+    .images {
+        width: 5%;
+        height: 4.5%;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .bg_image {
+        background-image: none;
+    }
+    .float_center {
+        margin: 0; 
+    }
+    .signin {
+        width: 50%;
+    }
+    .images {
+        width: 5%;
+        height: 4.5%;
+    }
+}
